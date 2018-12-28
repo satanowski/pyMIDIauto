@@ -1,0 +1,21 @@
+midi_device: 'X-TOUCH MINI:X-TOUCH MINI MIDI 1 20:0'
+
+profiles:
+  general:
+    encoders:
+      9:
+        action: volume
+    buttons:
+      23:
+        up_action:
+        down_action: mute
+
+
+actions:
+  mute:
+    type: shell
+    cmd: '/usr/bin/amixer set Master toggle'
+
+  volume:
+    type: shell
+    cmd: "amixer sset 'Master' {}%"
