@@ -9,6 +9,21 @@ profiles:
       23:
         up_action:
         down_action: mute
+      18:
+        up_action:
+        down_action: prev
+      19:
+        up_action:
+        down_action: next
+      21:
+        up_action:
+        down_action: stop
+      22:
+        up_action:
+        down_action: play
+      23:
+        up_action:
+        down_action: pause
 
 
 actions:
@@ -19,3 +34,24 @@ actions:
   volume:
     type: shell
     cmd: "amixer sset 'Master' {}%"
+
+  prev:
+    type: shell
+    cmd: "mocp --previous"
+
+  next:
+    type: shell
+    cmd: "mocp --next"
+
+  stop:
+    type: shell
+    cmd: "mocp --stop"
+
+  play:
+    type: shell
+    cmd: "mocp --play"
+
+  pause:
+    type: shell
+    cmd: "mocp --toggle-pause"
+
