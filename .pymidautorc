@@ -37,21 +37,21 @@ actions:
 
   prev:
     type: shell
-    cmd: "mocp --previous"
+    cmd: "mpc prev"
 
   next:
     type: shell
-    cmd: "mocp --next"
+    cmd: "mpc next"
 
   stop:
     type: shell
-    cmd: "mocp --stop"
+    cmd: "mpc stop"
 
   play:
     type: shell
-    cmd: "mocp --play"
+    cmd: "mpc play"
 
   pause:
     type: shell
-    cmd: "mocp --toggle-pause"
+    cmd: "mpc toggle"
 
